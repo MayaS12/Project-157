@@ -58,8 +58,8 @@ AFRAME.registerComponent("poster", {
       entityID.setAttribute("visible", true);
       entityID.setAttribute("geometry", {
         primitive: "plane",
-        width: 20,
-        height: 28
+        width: 22,
+        height: 30
       });
       entityID.setAttribute("position", position);
       entityID.setAttribute("material", { color: "#0077cc", opacity: 1, });
@@ -71,6 +71,7 @@ AFRAME.registerComponent("poster", {
       entityID.setAttribute("visible", true);
       entityID.setAttribute("geometry", { primitive: "plane", width: 20, height: 28 });
       entityID.setAttribute("material", { src: item.url });
+      entityID.setAttribute("position", {x: 0, y: 0, z: 0.1});
   
       return entityID;
     },
